@@ -11,9 +11,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
 set(BUILD_SHARED_LIBS OFF)
 
+add_subdirectory(external) # BUILD EXTERNAL FIRST
 add_subdirectory(src)
-add_subdirectory(external)
-
 
 include(CTest)
 enable_testing()
